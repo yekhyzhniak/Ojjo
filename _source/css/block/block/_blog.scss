@@ -1,0 +1,98 @@
+.blog{
+    &__content{
+        padding: 120px 0 60px 0;
+    }
+    &__subtitle{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    &__subtitle-text{}
+    &__title{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    &__title-text{}
+    &__cards{
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    &__item{
+        position: relative;
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: calc( 100% / 3 - ( 20px * ( 3 - 1 ) / 3 ));
+        max-width: calc( 100% / 3 - ( 20px * ( 3 - 1 ) / 3 ));
+    }
+    &__item-bg{
+        position: relative;
+        z-index: 1;
+        right: 50%;
+        transform: translateX(50%);
+        padding-top: 80%;
+        width: 100%;
+    }
+    &__item-bg:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(.jpg);
+    }
+    &__item-pic{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &__item-content{
+        position: absolute;
+        z-index: 3;
+        bottom: 30px;
+        right: 50%;
+        transform: translateX(50%)
+    }
+    &__item-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: center;
+        color: #FFFFFF;
+        margin: 0 auto;
+        // max-width: 200px;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center;
+    }
+    &__btn-link{
+        padding: 15px 35px;
+        background: #333333;
+        border: 1px solid #FFFFFF;
+
+    }
+    &__btn-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;}
+}

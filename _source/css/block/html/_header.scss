@@ -1,0 +1,238 @@
+.header{
+
+    position: relative;
+    
+    &__content{
+        position: relative;
+        z-index: 3;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu-left{
+        flex: 0 0 327px;
+        margin-right: 30px;
+    }
+    &__list{
+        display: flex;
+        &-item:not(:last-child){
+            margin-right: 40px;
+        }
+        &-item:nth-child(3){
+            margin-right: 25px;
+        }
+        &-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-item:hover{
+            border-bottom: 2px solid #fff;
+        }
+        &-text{
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+    }
+    &__logo{
+        font-size: 0;
+        flex: auto;
+        text-align: center;
+
+    }
+    &__menu-right{
+        flex: 0 0 327px;
+        margin-left: 30px;
+    }
+    &__account{
+    width: 24px;
+    height: 24px;
+    fill: white;
+    font-size: 0;
+    }
+    &__heart{
+        width: 18px;
+        height: 18px;
+        fill: white;
+        font-size: 0;
+    }
+    &__search{
+        width: 18px;
+        height: 18px;
+        fill: white;
+        margin-right: 16px;
+        font-size: 0;
+    }
+}
+
+.mheader{
+    width: 100%;
+    position: relative;
+    padding-top: 25px;
+    z-index: 3;
+    display: none;
+
+    &__content{
+        position: relative;
+        z-index: 3;
+        
+        @include m-tablet(){
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__logo{
+        font-size: 0;
+    }
+    &__menu-show{
+
+    }
+    &__menu-close{
+
+    }
+    &__link{}
+    &__pic{
+        width: 40px;
+        height: 40px;
+        fill: white;
+        font-size: 0;
+    }
+    &__menu{
+        display: none;
+        background: #333333;
+        position: absolute;
+        width: 100vw;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100vh;
+        top: 0;
+        padding-top: 110px;
+        &.active{
+            @include m-tablet() {
+                display: block;
+            }
+            
+        }
+    }
+    &__list{
+        max-width: 768px;
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 15px;
+        @include m-phone(){
+            max-width: 375px;
+            transform: translateX(-50%);
+        }
+        @include m-custom(960px)
+    }
+    &__list-item{
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        width: 295px;
+        margin-left: 30px;
+    }
+    &__list-item:nth-child(5){
+        border-top: 1px solid #FFFFFF;
+    }
+    &__list-item:nth-child(6){
+        border-top: 1px solid #FFFFFF;
+    }
+    &__link{}
+    &__list-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 140%;
+        text-align: right;
+        color: #FFFFFF;
+    }
+    &__account{
+        width: 50px;
+        height: 50px;
+        margin-right: 35px;
+    }
+    &__heart{
+        width: 40px;
+        height: 40px;
+    }
+    &__socials-link:not(:last-child){
+        margin-right: 30px;
+    }
+    &__socials-pic{
+        width: 36px;
+        height: 36px;
+        fill: #fff;
+        stroke: #FFFFFF;
+    }
+
+}
+
+.menu-btn {
+	width: 36px;
+	height: 31px;
+	padding: 5px;
+	margin-top: -5px;
+	margin-left: -5px;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	display: none;
+    z-index: 10;
+    position: relative;
+    @include m-tablet() {
+        display: flex;
+    }
+	&__wrap {
+		width: 26px;
+		height: 21px;
+		position: relative;
+	}
+	span {
+		position: absolute;
+		top: 50%;
+		background-color: white;
+		width: 100%;
+		height: 2px;
+		margin-top: -1px;
+		border-radius: 0px;
+		transition: transform 0.2s, opacity 0.2s, margin-top 0.2s;
+        
+        // Внутрь инклуда ложим параметры, которые будут юзаться для закрывашки бургера, только для спана!
+        @include m-tablet() {
+            
+
+        }
+
+
+		&:nth-child(1) {
+			transform: translateY(-8px);
+		}
+		&:nth-child(2) {
+			width: 17px;
+		}
+		&:nth-child(3) {
+			transform: translateY(8px);
+		}
+	}
+	&.active {
+		span {
+			&:nth-child(1) {
+				transform: translateY(0) rotate(-45deg);
+			}
+			&:nth-child(2) {
+				width: 100%;
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: translateY(0) rotate(45deg);
+			}
+		}
+	}
+}

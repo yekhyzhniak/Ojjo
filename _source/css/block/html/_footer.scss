@@ -1,0 +1,88 @@
+.footer{
+    position: relative;
+    &__content{
+        padding-top: 80px;
+        display: flex;
+    }
+    &__content-item{
+        width: 255px;
+        padding-bottom: 60px;
+    }
+    &__content-item:not(:last-child){
+        margin-right: 30px;
+    }
+    &__title{
+        height: 35px;
+        border-bottom: 1px solid #333333;
+        margin-bottom: 30px;
+    }
+    &__title-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    &__link{
+        display: flex;
+    }
+    &__text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+    &__payment{
+        margin-top: 6px;
+    }
+    &__pic:not(:last-child){
+        margin-right: 20px;
+    }
+    &__link{}
+    &__link-pic{
+        width: 20px;
+        height: 20px;
+        margin-right: 20px;
+    }
+    &__socials{
+        align-items: center;
+    }
+    &__socials-link:not(:last-child){
+        margin-right: 20px;
+    }
+    &__socials-pic{
+        width: 20px;
+        height: 20px;
+    }
+    &__down{
+        padding: 20px 0;
+        border-top: 1px solid #333333;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__down-text{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #333333;
+    }
+    &__down-text:last-child{
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 150%;
+        text-align: right;
+        text-decoration-line: underline;
+        color: #333333;
+    }
+}
+
