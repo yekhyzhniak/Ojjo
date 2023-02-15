@@ -28,30 +28,3 @@ $padding: 0px;
 //
 $trsn: 0.2s;
 
-.active{
-    background: #333333;
-    color: white;
-}
-
-.title{
-    font-family: 'Noto Serif';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 41px;
-    text-align: center;
-    color: #333333;
-}
-.subtitle{
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 140%;
-    text-align: center;
-    color: #333333;
-}
-.white{
-    color: #fff;
-}
-@import 'media';

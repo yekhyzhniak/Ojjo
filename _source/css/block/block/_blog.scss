@@ -75,24 +75,4 @@
         margin: 0 auto;
         // max-width: 200px;
     }
-    &__btn{
-        display: flex;
-        justify-content: center;
-    }
-    &__btn-link{
-        padding: 15px 35px;
-        background: #333333;
-        border: 1px solid #FFFFFF;
-
-    }
-    &__btn-text{
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #FFFFFF;}
 }

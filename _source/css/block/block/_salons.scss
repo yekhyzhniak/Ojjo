@@ -9,7 +9,8 @@
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        background: url("@img/salons-bgpic.jpg") repeat;
+        background: url("../img/content/salons-bgpic.jpg") repeat;
+
     }
     &__content{
         position: relative;
@@ -46,23 +47,5 @@
         display: block;
         max-width: 730px;
     }
-    &__btn{
-        display: flex;
-        justify-content: center;
-    }
-    &__btn-link{
-        padding: 15px 35px;
-        background: #FFFFFF;
-        border: 1px solid #333333;
-    }
-    &__btn-text{
-        font-family: 'Gilroy';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        color: #333333;}
+
 }
