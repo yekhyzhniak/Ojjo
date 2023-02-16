@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="ru">
+    <meta charset="utf-8">
+    <title>Ojjo-store</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./css/store.css?_v=20230126022303">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+    </style>
+    <!-- <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./module/normalize/normalize.css">
+    <link rel="stylesheet" href="./module/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./module/swiper/swiper.min.css">
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="shortcut icon" href="./favicon/favicon.ico"> -->
+</head>
+
+<body class="body">
+    <div class="wrapper">
+        @@include('./html/_header.html')
+        <main>
+            <section class="section">
+                <div class="container">
+                    <div class="background"></div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="container">
+                    <div class="shop">
+                        <div class="shop__content">
+                            <div class="shop__selectrow">
+                                <select name="brand" id="brand" class="shop__select">
+                                    <option value="brand__value1" selected class="shop__select-item">Бренд</option>
+                                    <option value="brand__value2" class="shop__select-item">Бренд</option>
+                                    <option value="brand__value3" class="shop__select-item">Бренд</option>
+                                </select>
+                                <select name="price" id="price" class="shop__select">
+                                    <option value="price__value1" selected class="shop__select-item">Цена</option>
+                                    <option value="price__value2" class="shop__select-item">Цена</option>
+                                    <option value="price__value3" class="shop__select-item">Цена</option>
+                                </select>
+                                <select name="person" id="person" class="shop__select">
+                                    <option value="person__value1" selected class="shop__select-item">Для него</option>
+                                    <option value="person__value2" class="shop__select-item">Для неё</option>
+                                    <option value="person__value3" class="shop__select-item">Для обоих</option>
+                                </select>
+                                <select name="collection" id="collection" class="shop__select">
+                                    <option value="collection__value1" selected class="shop__select-item">Колекция 1
+                                    </option>
+                                    <option value="collection__value2" class="shop__select-item">Колекция 2</option>
+                                    <option value="collection__value3" class="shop__select-item">Колекция 3</option>
+                                </select>
+                                <select name="season" id="season" class="shop__select">
+                                    <option value="season__value1" selected class="shop__select-item">Лето</option>
+                                    <option value="season__value2" class="shop__select-item">Осень</option>
+                                    <option value="season__value3" class="shop__select-item">Папиросим</option>
+                                </select>
+                                <select name="event" id="event" class="shop__select">
+                                    <option value="event__value1" selected class="shop__select-item">День рождения
+                                    </option>
+                                    <option value="event__value2" class="shop__select-item">Свадьба</option>
+                                    <option value="event__value3" class="shop__select-item">Крестины</option>
+                                </select>
+                            </div>
+                            <div class="shop__rows">
+                                <div class="shop__row">
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop__row">
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop__row">
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop__row">
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                    <div class="shop__card">
+                                        <div class="shop__card-img">
+                                            <img src="./img/content/shop__rings.jpg" alt="card-pic"
+                                                class="shop__card-pic">
+                                        </div>
+                                        <span class="shop__card-subtitle">Подвеска</span>
+                                        <span class="shop__card-title">Dolce & Gabanna</span>
+                                        <div class="shop__btn">
+                                            <a href="" class="shop__btn-link btn-link">175 000 ₽</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shop__btn-show">
+                                <a href="#" class="shop__btn-link btn-link">покажите еще</a>
+                            </div>
+                            <div class="shop__description">
+                                <div class="shop__dscr">
+                                    <div class="shop__description-bg"></div>
+                                    <div class="shop__text">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus
+                                        cupiditate enim in, voluptatum corrupti tempore repellat! Ex consequatur,
+                                        expedita
+                                        culpa minima minus provident magni ducimus aliquid iusto, atque consectetur!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus
+                                        cupiditate enim in, voluptatum corrupti tempore repellat! Ex consequatur,
+                                        expedita
+                                        culpa minima minus provident magni ducimus aliquid iusto, atque consectetur!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus
+                                        cupiditate enim in, voluptatum corrupti tempore repellat! Ex consequatur,
+                                        expedita
+                                        culpa minima minus provident magni ducimus aliquid iusto, atque consectetur!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus
+                                        cupiditate enim in, voluptatum corrupti tempore repellat! Ex consequatur,
+                                        expedita
+                                        culpa minima minus provident magni ducimus aliquid iusto, atque consectetur!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus
+                                        cupiditate enim in, voluptatum corrupti tempore repellat! Ex consequatur,
+                                        expedita
+                                        culpa minima minus provident magni ducimus aliquid iusto, atque consectetur!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus
+                                        cupiditate enim in, voluptatum corrupti tempore repellat! Ex consequatur,
+                                        expedita
+                                        culpa minima minus provident magni ducimus aliquid iusto, atque consectetur!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat temporibus
+                                        cupiditate enim in, voluptatum corrupti tempore repellat! Ex consequatur,
+                                        expedita
+                                        culpa minima minus provident magni ducimus aliquid iusto, atque consectetur!
+                                    </div>
+                                    <div class="shop__dscr-btn">
+                                        <a href="#" class="shop__dscr-link">читать полностью</a>
+                                    </div>
+                                </div>
+                                <div class="shop__picts">
+                                    <div class="shop__dscr-item">
+                                        <svg class="shop__dscr-svg">
+                                            <use xlink:href="./svg/sprite.svg#shop__delivery"></use>'svg'
+                                        </svg>
+                                        <span class="shop__dscr-text">Бесплатная
+                                            доставка</span>
+                                    </div>
+                                    <div class="shop__dscr-item">
+                                        <svg class="shop__dscr-svg">
+                                            <use xlink:href="./svg/sprite.svg#shop__list"></use>'svg'
+                                        </svg>
+                                        <span class="shop__dscr-text">Индивидуальный дизайн</span>
+                                    </div>
+                                    <div class="shop__dscr-item">
+                                        <svg class="shop__dscr-svg">
+                                            <use xlink:href="./svg/sprite.svg#shop__ribbon-design"></use>'svg'
+                                        </svg>
+                                        <span class="shop__dscr-text">Бесплатная
+                                            примерка</span>
+                                    </div>
+                                    <div class="shop__dscr-item">
+                                        <svg class="shop__dscr-svg">
+                                            <use xlink:href="./svg/sprite.svg#shop__jewelry"></use>'svg'
+                                        </svg>
+                                        <span class="shop__dscr-text">Личный подход
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        @@include('./html/_footer.html')
+
+    </div>
+
+    @@include('./html/_scripts.html')
+
+
+</body>
+
+</html>

@@ -83,13 +83,14 @@ a {
     }
     @include m-tablet-wide() {
         max-width: 1024px;
+        
     }
     @include m-tablet() {
         max-width: 768px;
         margin: 0 auto;
     }
     @include m-phone() {
-        max-width: 428px;
+        max-width: 375px;
     }
 }
 
