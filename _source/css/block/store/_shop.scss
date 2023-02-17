@@ -27,7 +27,6 @@
     &__row{
         display: flex;
         justify-content: space-between;
-
         padding: 60px 0 95px 0;
     }
     &__row:nth-child(3){
@@ -121,6 +120,7 @@
         z-index: 5;
         bottom: 0;
         left: 0;
+        border-bottom: 1px dashed #333333;
     }
     &__dscr-link{
         font-family: 'Gilroy';
@@ -145,6 +145,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-bottom: 30px;
     }
     &__dscr-item:nth-child(1){
         margin-right: 20px;

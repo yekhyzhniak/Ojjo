@@ -1,0 +1,42 @@
+.path{
+    position: relative;
+    &__content{
+        max-width: 468px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 0;
+    }
+    &__links{
+        display: flex;
+    }
+    &__links-item{
+        display: flex;
+        margin-right: 15px;
+    }
+    &__link{
+        display: block;
+        margin-right: 15px;
+
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        text-decoration-line: underline;
+        color: #333333;
+    }
+    &__link:last-child{
+        text-decoration-line: none;
+        margin-right: 0;
+    }
+    &__slash{
+        display: block;
+
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #333333;
+    }
+}
