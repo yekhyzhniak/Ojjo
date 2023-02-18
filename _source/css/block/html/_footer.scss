@@ -26,7 +26,12 @@
         justify-content: center;
         margin-bottom: 15px;
     }
-    &__subtitle-text{}
+    &__subtitle-text{
+        @include m-phone(){
+            text-align: center;
+            
+        }
+    }
     &__title{
         display: flex;
         justify-content: center;
@@ -55,6 +60,12 @@
     }
     &__list{
         align-items: center;
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+        @include m-phone(){
+            margin-right: 0;
+        }
     }
     &__list-item:not(:last-child){
         margin-bottom: 15px;

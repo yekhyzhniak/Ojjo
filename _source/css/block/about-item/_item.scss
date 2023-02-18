@@ -18,6 +18,9 @@
         @include m-tablet(){
             margin: 0 auto;
         }
+        @include m-phone(){
+            max-width: 100%;
+        }
 
     }
     &__preview{
@@ -26,6 +29,9 @@
         height: 430px;
         margin-bottom: 30px;
         overflow: hidden;
+        @include m-phone(){
+            display: none;
+        }
     }
     &__preview-pic{
         position: relative;
@@ -34,11 +40,19 @@
     &__row{
         display: flex;
         justify-content: space-between;
+        @include m-phone(){
+            flex-direction: column;
+        }
     }
     &__row-pic{
         width: 160px;
         height: 120px;
         overflow: hidden;
+        @include m-phone(){
+            width: 100%;
+            height: 100%;
+            margin-bottom: 20px;
+        }
     }
     &__row-img{
         width: 100%;
@@ -60,6 +74,9 @@
         width: 100%;
         height: 100%;
         padding: 40px 30px;
+        @include m-phone(){
+            padding: 20px 10px;
+        }
     }
     &__title{
         font-family: 'Gilroy';
@@ -71,11 +88,16 @@
         text-transform: uppercase;
         color: #333333;
         margin-bottom: 30px;
+        @include m-phone(){
+            text-align: center;
+        }
     }
     &__subtitle{
         padding-bottom: 30px;
         border-bottom: 1px solid #D6D6D6;
         margin-bottom: 30px;
+        @include m-phone(){
+        }
     }
     &__subtittle-text{
         font-family: 'Gilroy';
@@ -84,12 +106,34 @@
         font-size: 14px;
         line-height: 150%;
         color: #979797;
+        @include m-phone(){
+            display: block;
+            
+        }
     }
     &__subtittle-text:not(:last-child){
         margin-right: 15px;
+        @include m-phone(){
+            margin-right: 0;
+        }
     }
     &__subtittle-text:nth-child(2){
         margin-right: 25px;
+        @include m-phone(){
+            margin-right: 0;
+        }
+    }
+    &__subtittle-text:last-child{
+        @include m-phone(){
+            text-align: center;
+            font-size: 16px;
+            font-style: 600;
+        }
+    }
+    &__subtittle-text:nth-child(2){
+        @include m-phone(){
+            text-align: center;
+        }
     }
     &__dscr-text{
         font-family: 'Gilroy';
@@ -113,6 +157,9 @@
     }
     &__btns{
         display: flex;
+        @include m-phone(){
+            flex-direction: column;
+        }
     }
     &__btn-buy{
         padding: 10px 20px;  
@@ -128,6 +175,10 @@
         flex: none;
         order: 0;
         flex-grow: 0;
+        @include m-phone(){
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
     }
     &__btn-bskt{
         padding: 10px 20px;

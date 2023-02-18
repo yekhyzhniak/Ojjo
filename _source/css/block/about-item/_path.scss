@@ -5,13 +5,25 @@
         width: 100%;
         margin: 0 auto;
         padding: 60px 0;
+        @include m-phone(){
+            padding: 30px 0;
+        }
     }
     &__links{
         display: flex;
+        @include m-phone(){
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 180px;
+        }
     }
     &__links-item{
         display: flex;
         margin-right: 15px;
+        @include m-phone(){
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
     }
     &__link{
         display: block;
@@ -24,6 +36,7 @@
         line-height: 150%;
         text-decoration-line: underline;
         color: #333333;
+        
     }
     &__link:last-child{
         text-decoration-line: none;

@@ -9,6 +9,9 @@
         flex-direction: column;
         padding-bottom: 60px;
     }
+    @include m-phone(){
+        max-width: 330px;
+    }
 
 
     &__bg{
@@ -31,6 +34,9 @@
         @include m-tablet(){
             margin: 0 auto;
             margin-bottom: 30px;
+        }
+        @include m-phone(){
+            margin-bottom: 50px;
         }
     }
     &__text{

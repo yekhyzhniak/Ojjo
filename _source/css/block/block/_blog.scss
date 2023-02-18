@@ -87,5 +87,8 @@
         @include m-tablet(){
             font-size: 14px;
         }
+        @include m-phone(){
+            font-size: 18px;
+        }
     }
 }
