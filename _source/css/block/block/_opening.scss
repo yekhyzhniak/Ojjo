@@ -7,14 +7,32 @@
         z-index: 1;
         margin-top: -77px;
         width: 1920px;
+        @include m-phone(){
+            margin-top: 0;
+            width: 768px;
+        }
     }
     &__bg-pic{
         object-fit: cover;
+        @include m-phone(){
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &__content{
         position: relative;
         z-index: 3;
         padding: 523px 0 28px 0;
+        @include m-tablet(){
+            padding-top: 400px;
+            padding-bottom: 60px;
+        }
+        @include m-phone(){
+            padding: 0;
+            padding-top: 100px;
+            padding-bottom: 85px;
+        }
     }
     &__title{
         display: flex;
@@ -32,15 +50,45 @@
     }
     &__btn{
         margin-bottom: 110px;
+        @include m-tablet(){
+            margin-bottom: 200px;
+        }
+        @include m-phone(){
+            margin-bottom: 0;
+        }
     }
     &__footer{}
     &__list{
         display: flex;
-        justify-content: center
+        justify-content: center;
+        @include m-phone(){
+            display: none;
+        }
     }
     &__list-item{
-        padding: 0 15px
+        padding: 0 15px;
+        @include m-tablet(){
+            padding: 0 5px;
+        }
     }
+    &__list-item:nth-child(6){
+        @include m-tablet(){
+            display: none;
+        }
+    }
+    &__list-item:nth-child(5){
+        @include m-tablet(){
+            display: none;
+        }
+    }
+    &__list-item:nth-child(4){
+        @include m-tablet(){
+            border-right: none;
+        }
+    }
+
+
+
     &__list-item:not(:last-child){
         border-right: 1px solid #FFFFFF;
     }

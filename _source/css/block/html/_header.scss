@@ -1,6 +1,10 @@
 .header{
     position: relative;
     z-index: 5;
+    @include m-tablet(){
+        display: none;
+        padding-top: 0;
+    }
     
     &__content{
         position: relative;
@@ -47,7 +51,6 @@
     }
     &__menu-right{
         flex: 0 0 327px;
-        // margin-left: 30px;
     }
     &__account{
     width: 24px;
@@ -76,6 +79,17 @@
     padding-top: 25px;
     z-index: 3;
     display: none;
+    @include m-tablet(){
+        padding-top: 0;
+        display: block;
+    }
+    @include m-phone(){
+        width: 100%;
+        padding: 5px 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
 
     &__content{
         position: relative;
@@ -85,15 +99,48 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 25px 0;
         }
     }
     &__logo{
         font-size: 0;
+        @include m-tablet(){
+            position: relative;
+            z-index: 10;
+        }
+        @include m-phone(){
+            width: 216px;
+            position: relative;
+            z-index: 5;
+        }
     }
     &__menu-show{
+        @include m-tablet(){
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        @include m-phone(){
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+        }
 
     }
     &__menu-close{
+        @include m-tablet(){
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+        @include m-phone(){
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
 
     }
     &__link{}
@@ -113,6 +160,16 @@
         height: 100vh;
         top: 0;
         padding-top: 110px;
+        @include m-phone(){
+            background: #333333;
+            position: absolute;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100vh;
+            top: 0;
+            padding-top: 90px;
+        }
         &.active{
             @include m-tablet() {
                 display: block;
@@ -129,7 +186,11 @@
             max-width: 375px;
             transform: translateX(-50%);
         }
-        @include m-custom(960px)
+        @include m-phone(){
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
     &__list-item{
         display: flex;
@@ -137,6 +198,13 @@
         padding: 10px 0;
         width: 295px;
         margin-left: 30px;
+        @include m-tablet(){
+            margin-left: 0;
+        }
+        @include m-phone(){
+            margin-left: 0;
+            width: 295px;
+        }
     }
     &__list-item:nth-child(5){
         border-top: 1px solid #FFFFFF;

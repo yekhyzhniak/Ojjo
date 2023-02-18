@@ -1,14 +1,23 @@
 .item{
     position: relative;
     padding-bottom: 120px;
+    @include m-tablet(){
+        padding-bottom: 60px;
+    }
     &__content{
         width: 100%;
         display: flex;
         justify-content: space-between;
+        @include m-tablet(){
+            flex-direction: column-reverse;
+        }
     }
     &__picts{
         max-width: 540px;
         width: 100%;
+        @include m-tablet(){
+            margin: 0 auto;
+        }
 
     }
     &__preview{
@@ -41,6 +50,10 @@
         width: 100%;
         border: 1px solid #D6D6D6;
         padding: 10px;
+        @include m-tablet(){
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
     }
     &__dscr-box{
         border: 1px solid #D6D6D6;
