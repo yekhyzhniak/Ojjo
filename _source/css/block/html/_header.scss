@@ -160,7 +160,8 @@
         height: 100vh;
         top: 0;
         padding-top: 110px;
-        @include m-phone(){
+        z-index: 4;
+        @include m-tablet(){
             background: #333333;
             position: absolute;
             width: 100vw;
@@ -170,6 +171,9 @@
             top: 0;
             padding-top: 90px;
         }
+        // @include m-phone(){
+        //     height: 370px;
+        // }
         &.active{
             @include m-tablet() {
                 display: block;
