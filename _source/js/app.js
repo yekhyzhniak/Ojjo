@@ -32,7 +32,11 @@ if (document.querySelectorAll('.js-btn') !== null) {
     btn.forEach(function (element) {
         element.onclick = showToogle;
         function showToogle() {
-            element.classList.toggle('js-btn-toggle')
+            let data = this.getAttribute('data');
+            for (elems of btn) {
+                elems.classList.remove('js-btn-toggle')
+            }
+            document.querySelector(`.js-btn[data="${data}"]`).classList.add('js-btn-toggle')
         }
     });
 }
