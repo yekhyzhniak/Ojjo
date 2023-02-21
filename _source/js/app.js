@@ -41,5 +41,20 @@ if (document.querySelectorAll('.js-btn') !== null) {
     });
 }
 
+if (document.querySelectorAll('.js-row-pic') !== null) {
+    let btn = document.querySelectorAll('.js-row-pic');
+    let pics = document.querySelectorAll('.js-big-pic');
+    btn.forEach(function (element) {
+        element.onclick = showPic;
+        function showPic() {
+            let data = this.getAttribute('data');
+            for (elems of pics) {
+                elems.classList.remove('hidden')
+                elems.classList.add('hidden')
+            }
+            document.querySelector(`.js-big-pic[data="${data}"]`).classList.remove('hidden')
+        }
+    })
+}
 
 
