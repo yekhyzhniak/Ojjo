@@ -7,7 +7,7 @@
     padding-bottom: 120px;
     @include m-tablet(){
         flex-direction: column;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
     @include m-phone(){
         max-width: 330px;

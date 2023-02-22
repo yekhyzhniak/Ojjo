@@ -22,6 +22,7 @@ if (document.querySelector('.js-show-row') !== null) {
             elems.classList.remove('hidden');
         }
         document.querySelector('.js-show-row').classList.add('hidden');
+        document.querySelector('.shop__btn-show').classList.add('margin');
     }
 }
 

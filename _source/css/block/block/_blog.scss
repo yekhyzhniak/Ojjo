@@ -1,6 +1,9 @@
 .blog{
     &__content{
         padding: 120px 0 60px 0;
+        @include m-tablet(){
+            padding: 60px 0 0 0;
+        }
         @include m-phone(){
             padding: 30px 0;
         }
@@ -15,6 +18,9 @@
         display: flex;
         justify-content: center;
         margin-bottom: 60px;
+        @include m-phone(){
+            margin-bottom: 30px;
+        }
     }
     &__title-text{}
     &__cards{
@@ -27,6 +33,7 @@
         @include m-phone(){
             flex-wrap: nowrap;
             flex-direction: column;
+            margin-bottom: 30px;
         }
     }
 
