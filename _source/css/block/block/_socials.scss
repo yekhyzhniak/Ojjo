@@ -39,6 +39,7 @@
         flex: 0 0 25%;
         max-width: 25%;
         font-size: 0;
+        overflow: hidden;
         @include m-phone(){
             flex: 0 0 50%;
             max-width: 50%;
@@ -62,6 +63,7 @@
     }
     &__img{
         width: 100%;
+        & > * {transform: scale(1.025);}   
     }
     &__img-pic{
         width: 100%;

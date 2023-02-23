@@ -39,6 +39,7 @@ if (document.querySelectorAll('.js-btn') !== null) {
             }
             document.querySelector(`.js-btn[data="${data}"]`).classList.add('js-btn-toggle')
         }
+
     });
 }
 
