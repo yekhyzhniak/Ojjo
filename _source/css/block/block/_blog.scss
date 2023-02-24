@@ -49,6 +49,10 @@
             margin-bottom: 10px;
         }
     }
+    &__item:hover{
+        transform: scale(1.05);
+        transition: 0.2s;
+    }
     &__item-bg{
         position: relative;
         z-index: 1;
@@ -56,6 +60,7 @@
         transform: translateX(50%);
         padding-top: 80%;
         width: 100%;
+        
     }
     &__item-bg:before {
         position: absolute;
@@ -65,7 +70,8 @@
         top: 0;
         left: 0;
         z-index: 2;
-        background: linear-gradient(180deg, rgba(180, 180, 180, 0) 20.31%, #333333 100%), url(.jpg);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0px, rgba(0, 0, 0, 0.4) 50%, transparent);
+        transition: 0.2s;
     }
     &__item-pic{
         width: 100%;
@@ -83,7 +89,7 @@
         transform: translateX(50%)
     }
     &__item-text{
-        font-family: 'Gilroy';
+        // font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 21px;

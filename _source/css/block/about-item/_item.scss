@@ -25,8 +25,9 @@
     }
     &__preview{
         position: relative;
-        width: 540px;
-        height: 430px;
+        // width: 540px;
+        // height: 430px;
+        width: 100%;
         margin-bottom: 30px;
         overflow: hidden;
         @include m-phone(){
@@ -86,7 +87,6 @@
         }
     }
     &__title{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -107,7 +107,6 @@
         }
     }
     &__subtittle-text{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -143,7 +142,6 @@
         }
     }
     &__dscr-text{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -152,7 +150,6 @@
         margin-bottom: 30px;
     }
     &__price{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
         font-size: 24px;

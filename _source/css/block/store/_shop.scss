@@ -22,7 +22,6 @@
         cursor: pointer;
         align-text: center;
 
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -50,7 +49,7 @@
         }
     }
     &__card{
-        padding: 10px 20px 0 20px;
+        // padding: 10px 20px 0 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -71,17 +70,16 @@
         }
     }
     &__card-img{
-        
+        width: 100%;
         margin-bottom: 25px;
     }
     &__card-pic{
-        width: 330px;
+        width: 100%;
         object-fit: cover;
     }
     &__card-subtitle{
         margin-bottom: 10px;
 
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -92,7 +90,6 @@
     &__card-title{
         margin-bottom: 25px;
 
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
         font-size: 24px;
@@ -149,7 +146,6 @@
         }
     }
     &__text{     
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -164,7 +160,6 @@
         border-bottom: 1px dashed #333333;
     }
     &__dscr-link{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -206,7 +201,6 @@
     }
     &__dscr-text{
         display: block;
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;

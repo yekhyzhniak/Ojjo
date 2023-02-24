@@ -77,7 +77,6 @@
         margin-right: 20px;
     }
     &__list-text{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -106,6 +105,7 @@
         }
     }
     &__form-input{
+        font-family: Gilroy, sans-serif;
         width: 200px;
         height: 45px;
         background: #FFFFFF;
@@ -160,7 +160,6 @@
         }
     }
     &__title-text{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -176,7 +175,6 @@
         display: flex;
     }
     &__text{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -227,7 +225,6 @@
         }
     }
     &__down-text{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -238,7 +235,6 @@
         }
     }
     &__down-text:last-child{
-        font-family: 'Gilroy';
         font-style: normal;
         font-weight: 600;
         font-size: 14px;

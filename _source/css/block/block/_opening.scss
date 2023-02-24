@@ -1,5 +1,7 @@
 .opening{
     position: relative;
+    @include m-tablet(){
+    }
     &__bg{
         position: absolute;
         left: 50%;
