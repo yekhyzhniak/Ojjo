@@ -34,10 +34,7 @@ if (document.querySelectorAll('.js-btn') !== null) {
         element.onclick = showToogle;
         function showToogle() {
             let data = this.getAttribute('data');
-            for (elems of btn) {
-                elems.classList.remove('js-btn-toggle')
-            }
-            document.querySelector(`.js-btn[data="${data}"]`).classList.add('js-btn-toggle')
+            document.querySelector(`.js-btn[data="${data}"]`).classList.toggle('js-btn-toggle')
         }
 
     });

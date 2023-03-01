@@ -18,6 +18,7 @@ header{
         align-items: center;
         display: flex;
         justify-content: space-between;
+        padding: 10px 0;
     }
     &__menu-left{
         flex: 0 0 327px;
@@ -25,7 +26,7 @@ header{
     }
     &__list{
         display: flex;
-        padding-left: 0;
+        padding: 0;
         &-item:not(:last-child){
             margin-right: 30px;
         }
@@ -36,10 +37,11 @@ header{
             display: flex;
             justify-content: center;
             align-items: center;
+            height: 21px;
         }
-        &-item:hover{
-            border-bottom: 2px solid #fff;
-        }
+        // &-item:hover{
+        //     border-bottom: 1px solid #fff;
+        // }
         &-text{
             font-style: normal;
             font-weight: 400;
@@ -52,22 +54,31 @@ header{
         font-size: 0;
         flex: auto;
         text-align: center;
-
     }
     &__menu-right{
         flex: 0 0 327px;
     }
+    &__link{
+        display: flex;
+    }
+    &__link:hover{
+        border-bottom: 1px solid #fff;
+    }
     &__account{
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 21px;
     fill: white;
     font-size: 0;
+    display: flex;
+    align-items: center;
     }
     &__heart{
         width: 18px;
         height: 18px;
         fill: white;
         font-size: 0;
+        display: flex;
+        align-items: center;
     }
     &__search{
         width: 18px;
@@ -75,6 +86,8 @@ header{
         fill: white;
         margin-right: 16px;
         font-size: 0;
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -104,7 +117,7 @@ header{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 25px 0;
+            padding: 10px 0;
         }
     }
     &__logo{
