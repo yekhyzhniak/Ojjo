@@ -39,9 +39,6 @@ header{
             align-items: center;
             height: 21px;
         }
-        // &-item:hover{
-        //     border-bottom: 1px solid #fff;
-        // }
         &-text{
             font-style: normal;
             font-weight: 400;
@@ -73,8 +70,8 @@ header{
     align-items: center;
     }
     &__heart{
-        width: 18px;
-        height: 18px;
+        width: 17px;
+        height: 17px;
         fill: white;
         font-size: 0;
         display: flex;
@@ -258,6 +255,15 @@ header{
         height: 36px;
         fill: #fff;
         stroke: #FFFFFF;
+    }
+    &__search{
+        background: yellowgreen;
+        &-input{
+            border: none;
+        }
+        &-select{
+            border: none;
+        }
     }
 
 }
